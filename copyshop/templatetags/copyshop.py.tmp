@@ -1,0 +1,25 @@
+from markdown import markdown as md
+from django import template
+from django.utils.safestring import mark_safe
+
+MARKDOWN_EXTENSIONS = ['extra', 'smarty']
+register = template.Library()
+
+@register.simple_tag(takes_context=True)
+def eval(context, expr):
+    phone_regex = r'(073-?[0-9]+)/'
+    email_regex = r'([a-z]+@[a-z]+\.[a-z])/'
+
+    
+    
+
+    result = template.Template(expr).render(context)
+    return mark_safe(md(result, extensions=MARKDOWN_EXTENSIONS))
+
+def substitute(string, regexp, pre, post):
+    pattern = re.compile(regexp)
+
+    while True:
+        match = pattern.search(string)
+        if match:
+            return pre + match.group[0] + post

@@ -1,0 +1,216 @@
+body, html {
+  height: 100%;
+  overflow: hidden; }
+  @media (max-width: 600px) {
+    body, html {
+      overflow-y: auto; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato; }
+
+code {
+  font-size: 1.25em;
+  background: #c5ddf2;
+  color: black;
+  padding: 4px; }
+
+a.editlink {
+  color: red;
+  font-weight: bold;
+  text-decoration: none; }
+
+main {
+  height: 100%;
+  display: flex;
+  margin: 0 -1em;
+  justify-content: space-around;
+  box-sizing: border-box; }
+  @media (max-width: 600px) {
+    main {
+      display: block; } }
+
+div.options {
+  flex: 1 1 0;
+  background: white;
+  margin: 0 1em;
+  padding: 20px; }
+  @media (max-width: 600px) {
+    div.options {
+      width: auto; } }
+  div.options a.option {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #1e73be;
+    clear: both;
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-left: 0; }
+    div.options a.option img {
+      float: left;
+      width: 80px;
+      height: 80px;
+      vertical-align: top;
+      margin-right: 20px; }
+
+form {
+  flex: 1 1 0;
+  margin: 0 1em;
+  background: white;
+  padding: 1em;
+  max-width: 450px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative; }
+  @media (max-width: 600px) {
+    form {
+      max-width: none; } }
+
+article.invoice {
+  flex: 1 1 0;
+  margin: 0 1em;
+  box-sizing: border-box;
+  background: white;
+  list-style: none;
+  padding: 2em;
+  padding-bottom: 1em;
+  overflow: hidden;
+  color: #1e73be; }
+  article.invoice div.total {
+    border-top: 4px solid #1e73be;
+    padding: 1em; }
+    article.invoice div.total h1, article.invoice div.total h2 {
+      margin: 0;
+      font-size: 3.5em;
+      text-align: right;
+      position: relative; }
+      article.invoice div.total h1 span.total, article.invoice div.total h2 span.total {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: normal;
+        vertical-align: top;
+        position: relative;
+        top: 5px;
+        left: -10px; }
+    article.invoice div.total h2 {
+      font-size: 1.25em; }
+  article.invoice div.disclaimer {
+    color: black; }
+  article.invoice ul {
+    list-style: none;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 130px);
+    overflow-y: auto; }
+    article.invoice ul li {
+      margin: 0;
+      padding: 0;
+      font-weight: bold; }
+      article.invoice ul li a {
+        font-weight: normal;
+        color: red; }
+      article.invoice ul li ul {
+        margin-bottom: 1.5em; }
+    article.invoice ul li.item {
+      padding-left: 2em; }
+    article.invoice ul ul li {
+      font-weight: normal; }
+
+/* form elements */
+div.formfield {
+  margin: .25em 0;
+  padding: .25em;
+  text-align: center; }
+
+label {
+  display: inline-block;
+  width: 39%;
+  white-space: nowrap;
+  text-align: right; }
+
+input, select, textarea {
+  diplay: inline-block;
+  width: 59%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: .25em;
+  font-size: 1em;
+  background: white;
+  color: black;
+  border: 1px solid #ccc; }
+
+input[type=file] {
+  border: none; }
+
+input[type=checkbox] {
+  width: auto;
+  margin-right: 56%; }
+
+select {
+  background: #eee; }
+
+input[type=submit] {
+  width: 100%;
+  display: block;
+  background: #1e73be;
+  font-size: 2.5em;
+  margin: 0;
+  margin-top: .25em;
+  padding: .5em 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 16px solid white; }
+
+a.button {
+  display: block;
+  background: #1e73be;
+  font-size: 28px;
+  margin: 0;
+  margin-top: .25em;
+  padding: .5em 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center; }
+
+span.helptext {
+  display: block;
+  color: #999;
+  font-size: 0.75em; }
+
+ul.errorlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: red; }
+
+ul.errorlist li {
+  margin: 0;
+  padding: 0; }
+
+ul.errorlist li:before {
+  content: "Oeps! "; }
+
+.errors {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1em; }
+
+.error {
+  border: 1px solid red; }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Regular"), local("Lato-Regular"), url("Lato.eot?#iefix") format("embedded-opentype"), url("Lato.woff") format("woff"), url("Lato.woff2") format("woff2"), url("Lato.svg#Lato") format("svg"), url("Lato.ttf") format("truetype"); }
+
+/*# sourceMappingURL=../../../../../../static/iframe1.css.map */

@@ -1,0 +1,18 @@
+{% load cms %}
+
+<section class="hours" id="hours">
+  <h1 class="title">{{section.title}}</h1>
+  <div class="wrapper">
+    <ul>
+      {% for h in section.hours.all %}
+        <li>
+          <span class="day">{{h.day}}</span>
+          {{h.hours}}
+          <span class="note">{{h.note}}</span>
+        </li>
+      {% endfor %}
+    </ul><br>
+
+    {% editsection '<img src="/static/cms/edit.png">' %}
+  </div>
+</section>

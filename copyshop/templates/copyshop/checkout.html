@@ -1,0 +1,34 @@
+{% extends 'copyshop/base.html' %}
+
+{% block content %}
+  <section class="checkout">
+    <div class="wrapper">
+      <div class="spacer"></div>
+      <p>
+        Bedankt voor uw bestelling! Op deze pagina kunt u de
+        bestelling met <em>iDeal</em> betalen, via de beveiligde
+        portal van uw eigen bank.
+      </p>
+
+      <p>
+        Zou u zo vriendelijk willen zijn om hieronder uw naam en
+        adresgegevens in te vullen? Na het versturen van de bestelling
+        zullen wij deze gegevens weer verwijderen van ons systeem.
+      </p>
+
+      <p>
+        Het totaalbedrag van uw bestelling bedraagt: <em>€{{total|floatformat:"2"}}</em>
+      </p>
+
+
+      <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+          {% include 'cms/formfield.html' with field=field %}
+        {% endfor %}
+        <div class="spacer"></div>
+        <button class="button">Betalen met iDeal</button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

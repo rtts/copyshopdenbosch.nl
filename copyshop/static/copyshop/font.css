@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Anton';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Anton Regular'),
+		local('Anton-Regular'),
+		/* from https://fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot */
+		url('Anton.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff */
+		url('Anton.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2 */
+		url('Anton.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=XMgIKp1BZj6JIXOPBGyt0g&skey=3e16a04254d4c9b3&v=v8#Anton */
+		url('Anton.svg#Anton') format('svg'),
+		/* from https://fonts.gstatic.com/s/anton/v8/5t8vP9Hx2udzw372glmOxA.ttf */
+		url('Anton.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Lato Regular'),
+		local('Lato-Regular'),
+		/* from https://fonts.gstatic.com/s/lato/v13/nQhiC-wSiJx0pvEuJl8d8A.eot */
+		url('Lato.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/lato/v13/9k-RPmcnxYEPm8CNFsH2gg.woff */
+		url('Lato.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2 */
+		url('Lato.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=hLECvlEj3pKlnS4NFs8NQw&skey=2d58b92a99e1c086&v=v13#Lato */
+		url('Lato.svg#Lato') format('svg'),
+		/* from https://fonts.gstatic.com/s/lato/v13/v0SdcGFAl2aezM9Vq_aFTQ.ttf */
+		url('Lato.ttf') format('truetype');
+}

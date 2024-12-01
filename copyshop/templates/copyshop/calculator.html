@@ -1,0 +1,22 @@
+{% load cms copyshop %}
+<section class="calculator">
+  <h1 class="title">{{section.title}}</h1>
+  <div class="wrapper">
+
+    <div class="content">
+      {% link section.content %}
+    </div>
+
+    <div class="form">
+      <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+          {% include 'cms/formfield.html' with field=field %}
+        {% endfor %}
+        <button class="button" name="section" value="{{section.pk}}">Bereken prijs</button>
+      </form>
+    </div>
+
+    {% editsection '<img src="/static/cms/edit.png">' %}
+  </div>
+</section>

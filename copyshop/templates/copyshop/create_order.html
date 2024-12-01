@@ -1,0 +1,25 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label='copyshop' %}">Copyshop</a>
+    &rsaquo; <a href="{% url 'admin:copyshop_order_changelist' %}">Bestellingen</a>
+    &rsaquo; Bestelling toevoegen
+  </div>
+{% endblock %}
+
+{% block content %}
+  <h1>bestelling toevoegen</h1>
+  <div id="content-main">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+
+      <div class="submit-row">
+        <input type="submit" value="Opslaan">
+      </div>
+    </form>
+  </div>
+{% endblock %}

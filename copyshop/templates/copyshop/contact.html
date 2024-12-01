@@ -1,0 +1,25 @@
+{% load cms %}
+<section class="contact">
+  <h1 class="title">{{section.title}}</h1>
+
+  <div class="wrapper">
+    {% eval section.content %}
+
+    <div class="form">
+      <form method="post" class="cms">
+        {% csrf_token %}
+        {% for field in form %}
+          {% include 'cms/formfield.html' with field=field %}
+        {% endfor %}
+        <div class="spacer"></div>
+        <button class="button" name="section" value="{{section.pk}}">Verstuur</button>
+        <div class="spacer"></div>
+        <p>
+            Uw emailprogramma zal openen om het bericht te verzenden naar <b>info@copyshopdenbosch.nl</b>
+        </p>
+      </form>
+    </div>
+
+    {% editsection '<img src="/static/cms/edit.png">' %}
+  </div>
+</section>

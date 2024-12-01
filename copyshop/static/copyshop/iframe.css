@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 1em 2em;
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 0.8); }
+
+div.form ul {
+  border: 1px solid red; }
+
+/* form elements */
+div.formfield {
+  margin: .25em 0;
+  padding: .25em; }
+
+label {
+  width: 13em;
+  display: inline-block; }
+
+input, select, textarea {
+  width: 15em;
+  font-size: 1em;
+  margin: 0.25em 0; }
+
+input[type=submit] {
+  width: 15em;
+  padding: 10px;
+  text-align: left; }
+
+span.helptext {
+  display: block;
+  color: #999;
+  font-size: 0.75em; }
+
+ul.errorlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: red; }
+
+ul.errorlist li {
+  margin: 0;
+  padding: 0; }
+
+ul.errorlist li:before {
+  content: "Oeps! "; }
+
+.errors {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1em; }
+
+.error {
+  border: 1px solid red; }
+
+/*# sourceMappingURL=../../../../../../static/iframe.css.map */

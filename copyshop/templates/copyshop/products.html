@@ -1,0 +1,22 @@
+{% load cms thumbnail static %}
+
+<section class="products">
+  <h1 class="title">{{section.title}}</h1>
+  <ul>
+    {% for p in pages %}
+      <li {% if p.image %}style="background-image: url({% thumbnail p.image 200x200 %})"{% endif %}>
+        <a href="{{p.get_absolute_url}}">
+          <h2>{{p.title}}</h2>
+        </a>
+      </li>
+    {% endfor %}
+
+    {% if perms.copyshop_add_page %}
+      <li class="staff" style="background-image: url({% static 'copyshop/plus.png' %})">
+        <a href="{% url 'cms:createpage' %}">
+          <h2>Product toevoegen</h2>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</section>

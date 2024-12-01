@@ -1,0 +1,56 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}Copyshopdenbosch.nl{% endblock %}
+
+{% block extrahead %}
+  <style>
+    #header {
+        color: #1e73be !important;
+        background: white !important;
+    }
+    #header a {
+        color: #1e73be !important;
+    }
+    a:link, a:visited {
+        color: #1e73be;
+    }
+
+    .module h2, .module caption, .inline-group h2 {
+        color: white !important;
+        background: #1e73be !important;
+    }
+    div.breadcrumbs {
+        background: #1e73be !important;
+    }
+
+    div#copyshop h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 2.6rem !important;
+    }
+    @font-face {
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local('Anton Regular'),
+            local('Anton-Regular'),
+            /* from https://fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot */
+            url('/static/copyshop/Anton.eot?#iefix') format('embedded-opentype'),
+            /* from https://fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff */
+            url('/static/copyshop/Anton.woff') format('woff'),
+            /* from https://fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2 */
+            url('/static/copyshop/Anton.woff2') format('woff2'),
+            /* from https://fonts.gstatic.com/l/font?kit=XMgIKp1BZj6JIXOPBGyt0g&skey=3e16a04254d4c9b3&v=v8#Anton */
+            url('/static/copyshop/Anton.svg#Anton') format('svg'),
+            /* from https://fonts.gstatic.com/s/anton/v8/5t8vP9Hx2udzw372glmOxA.ttf */
+            url('/static/copyshop/Anton.ttf') format('truetype');
+    }
+  </style>
+{% endblock %}
+
+{% block branding %}
+  <div id="copyshop">
+    <h1><a href="/">COPYSHOPDENBOSCH<small>.NL</small></a></h1>
+  </div>
+{% endblock %}

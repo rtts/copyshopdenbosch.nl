@@ -1,0 +1,21 @@
+{% extends 'copyshop/base.html' %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    U bent hier: <a href="/">Home</a> > Prijsberekening
+  </div>
+{% endblock %}
+
+
+{% block content %}
+  <section class="result">
+    <h1 class="title">Uw prijsberekening</h1>
+    <div class="wrapper">
+      {% for item in items %}
+        {% if item.subtotal > 0 %}{{item.amount}} x {% endif %}{{item.description|safe}} <span>{{item.subtotal|floatformat:2}}</span><br>
+      {% endfor %}
+      <div class="total">Totaal: €{{total|floatformat:"2"}}</div>
+    </div>
+    <a class="button" href="/">Terug naar de homepage</a>
+  </section>
+{% endblock %}
