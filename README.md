@@ -6,8 +6,7 @@ application created by [Return to the Source](https://rtts.eu/),
 provided here for everyone to use under the [GPLv3](LICENSE) license
 as part of our free and open source philosophy.
 
-**This source code is provided as-is, without any support or
-  warranties**
+A former version of this website has been archived on https://copyshop.created.today/
 
 
 Installation
@@ -15,8 +14,6 @@ Installation
 
 Make sure that Python is installed, then run the following commands:
 
-    git clone https://github.com/rtts/copyshopdenbosch.nl
-    cd copyshopdenbosch.nl
     pip install -r requirements.txt
     ./manage.py migrate
     ./manage.py createsuperuser

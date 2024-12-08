@@ -1,0 +1,438 @@
+a.page.edit {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 1000; }
+  a.page.edit img {
+    display: block;
+    width: 75px;
+    height: auto; }
+
+a.section.edit {
+  position: absolute;
+  top: 10px;
+  left: calc(10% - 45px); }
+  a.section.edit img {
+    display: block;
+    width: 35px; }
+
+section:has(> a.edit) {
+  background: #eee; }
+
+strong {
+  color: red !important; }
+
+div.spacer {
+  height: 1rem; }
+
+@media (max-width: 600px) {
+  div.wrapper {
+    padding-left: 1em !important;
+    padding-right: 1em !important; } }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #1e73be; }
+
+p {
+  margin-top: 0; }
+
+h1 {
+  font-size: 1.75em; }
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 2em; }
+  table th, table td {
+    text-align: left;
+    padding: 0.5em; }
+  table th {
+    border-bottom: 2px solid #1e73be; }
+
+a {
+  color: #1e73be;
+  font-weight: bold; }
+
+a:hover {
+  text-decoration: underline; }
+
+a.button, button.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5em;
+  line-height: 1.25;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 5px 20px;
+  background: #1e73be;
+  color: white;
+  box-sizing: border-box; }
+  a.button:hover, button.button:hover {
+    color: #1e73be;
+    background: white;
+    box-shadow: inset 0 0 0 2px #1e73be; }
+
+a.editlink {
+  color: red;
+  font-weight: bold;
+  text-decoration: none; }
+
+header {
+  color: white;
+  background: #1e73be;
+  padding: 0.5em 10%;
+  overflow: hidden; }
+  @media (max-width: 600px) {
+    header {
+      padding: 1em 1%; } }
+  header div {
+    float: left; }
+    header div h1 {
+      font-family: 'Anton', sans-serif;
+      font-weight: normal;
+      font-size: 2.6em;
+      color: white;
+      margin: 0;
+      padding: 0; }
+      @media (max-width: 600px) {
+        header div h1 {
+          font-size: 10vw;
+          text-align: center; } }
+    @media (max-width: 600px) {
+      header div {
+        float: none; } }
+    header div img {
+      max-width: 100%; }
+    header div a {
+      color: white;
+      text-decoration: none;
+      font-weight: normal; }
+    header div a:hover {
+      text-decoration: none; }
+  header div.right {
+    text-align: right;
+    float: right;
+    padding-top: .5em; }
+    @media (max-width: 600px) {
+      header div.right {
+        padding-right: 1em; } }
+  header div.breadcrumbs {
+    clear: both; }
+    header div.breadcrumbs a {
+      text-transform: uppercase;
+      margin: 0 .25em; }
+    @media (max-width: 600px) {
+      header div.breadcrumbs {
+        display: none; } }
+section {
+  padding-bottom: 2em;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+  section em {
+    font-style: normal;
+    font-weight: bold; }
+  section p {
+    max-width: 700px; }
+  section div.wrapper {
+    padding: 0 10%;
+    position: relative; }
+  section h1.title {
+    padding-top: 1em;
+    padding-bottom: .5em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2em; }
+  section h1.title:before, section h1:after {
+    flex-grow: 1;
+    content: '';
+    height: 4px;
+    background: #1e73be; }
+  section h1.title:before {
+    margin-right: .5em; }
+  section h1.title:after {
+    margin-left: .52em; }
+  section form div.formfield {
+    padding: 0.5em 0; }
+  section form div.formfield {
+    padding: 0.5em 0; }
+    section form div.formfield.error {
+      border: 2px dotted red;
+      border-radius: 3px;
+      padding: 0.5em;
+      margin-top: 0.5em; }
+  section form ul.errorlist {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    list-style: none;
+    color: red;
+    font-size: 12px; }
+    section form ul.errorlist li {
+      margin: 0;
+      padding: 0; }
+  section form input, section form textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0; }
+
+section.checkout div.total {
+  clear: both;
+  font-size: 1.5em;
+  color: #1e73be;
+  font-weight: bold; }
+
+section.checkout form {
+  max-width: 700px; }
+  section.checkout form textarea {
+    height: 5em; }
+
+section.contact div.message {
+  display: none; }
+
+section.calculator div.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em; }
+  section.calculator div.wrapper > div {
+    flex: 1 0 300px;
+    margin: 1em;
+    box-sizing: border-box; }
+  section.calculator div.wrapper div.form {
+    padding: 0 1em;
+    border: 1px solid #1e73be; }
+    section.calculator div.wrapper div.form button {
+      margin: 1rem 0; }
+
+section.result {
+  text-align: center; }
+  section.result div.wrapper {
+    text-align: left;
+    width: 300px;
+    margin: auto;
+    line-height: 2;
+    margin-bottom: 2.5em; }
+    section.result div.wrapper span {
+      float: right; }
+    section.result div.wrapper div.total {
+      clear: both;
+      font-size: 1.5em;
+      color: #1e73be;
+      font-weight: bold;
+      text-align: right;
+      border-top: 2px solid #1e73be; }
+
+section.banner {
+  font-style: italic;
+  padding: 0; }
+  section.banner em {
+    font-style: italic; }
+  section.banner p {
+    max-width: 800px; }
+  section.banner div.wrapper {
+    padding: 1em 10%;
+    padding-bottom: 0;
+    background: #c5ddf2;
+    overflow: hidden; }
+
+section.products {
+  background-image: url(products_background2.jpg); }
+  section.products h1 {
+    color: white; }
+  section.products ul {
+    list-style: none;
+    margin: 0 10%;
+    padding: 0;
+    text-align: center; }
+    @media (max-width: 600px) {
+      section.products ul {
+        margin: 0 1%; } }
+    section.products ul li {
+      transition: all .2s ease;
+      display: inline-block;
+      width: 150px;
+      height: 200px;
+      margin: 1em;
+      background: white;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.85; }
+      @media (max-width: 600px) {
+        section.products ul li {
+          margin: 0.3em; } }
+      section.products ul li a {
+        color: black;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+      section.products ul li h2 {
+        margin: 0;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.2rem; }
+    section.products ul li:hover {
+      transform: scale(1.2);
+      opacity: 1; }
+    section.products ul li.staff {
+      transform-origin: left top;
+      transform: scale(0.5); }
+    section.products ul li.staff:hover {
+      transform: scale(0.6); }
+
+section.hours {
+  text-align: center;
+  padding-bottom: 1em; }
+  section.hours ul {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0;
+    list-style: none; }
+    section.hours ul li {
+      margin: .5em; }
+    section.hours ul span.day {
+      display: inline-block;
+      width: 2em; }
+    section.hours ul span.note {
+      display: block;
+      font-size: .75em;
+      color: red;
+      font-style: italic; }
+
+section.qualities {
+  text-align: center;
+  padding-bottom: 0; }
+  section.qualities ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    section.qualities ul li {
+      display: inline-block;
+      margin: .5em; }
+      section.qualities ul li img {
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: 100px; }
+
+section.downloads {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.superformosa.nl/2015/copyshop/thumbnails/Panorama1%20(large).jpg");
+  text-align: center; }
+  section.downloads h1 {
+    color: white; }
+  section.downloads div.wrapper {
+    padding: 0;
+    margin-top: 1.5em; }
+  section.downloads div.download {
+    text-align: left;
+    width: 400px;
+    display: inline-block;
+    margin: 0 1em 2em 1em;
+    vertical-align: top;
+    font-size: 1.25em;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.1px 1em; }
+    @media (max-width: 600px) {
+      section.downloads div.download {
+        width: auto;
+        display: block; } }
+    section.downloads div.download img {
+      width: 100px;
+      height: 100px;
+      vertical-align: middle;
+      margin-right: .5em; }
+
+section.direct {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.superformosa.nl/2015/copyshop/thumbnails/Panorama1%20(large).jpg"); }
+  section.direct h1 {
+    color: white; }
+  section.direct iframe {
+    display: block;
+    width: 80%;
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    margin: 2em auto;
+    border: none; }
+
+section.map {
+  position: relative; }
+  section.map iframe {
+    display: block;
+    width: 80%;
+    margin: 2em auto; }
+
+section.text div.wrapper {
+  padding: 1.5em 10%;
+  display: flex;
+  justify-content: center;
+  margin: -1em; }
+  @media (max-width: 600px) {
+    section.text div.wrapper {
+      display: block; } }
+  section.text div.wrapper > div {
+    margin: 1em;
+    flex: 1 1 0;
+    max-width: 700px; }
+  section.text div.wrapper div.image {
+    flex-basis: 40%; }
+    section.text div.wrapper div.image img {
+      display: block;
+      width: 100%; }
+  section.text div.wrapper div.text {
+    flex-basis: 60%; }
+
+footer {
+  clear: both;
+  color: white;
+  background: #1e73be;
+  padding: 20px 10%;
+  text-align: center; }
+  footer div {
+    display: inline-block; }
+  footer div:after {
+    content: '|';
+    margin: 0 1em; }
+  footer div:last-child:after {
+    content: ''; }
+
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Anton Regular"), local("Anton-Regular"), url("Anton.eot%3F") format("embedded-opentype"), url("Anton.woff") format("woff"), url("Anton.woff2") format("woff2"), url("Anton.svg") format("svg"), url("Anton.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Regular"), local("Lato-Regular"), url("Lato.eot%3F") format("embedded-opentype"), url("Lato.woff") format("woff"), url("https://www.copyshopdenbosch.nl/static/,homepage/Lato.woff2") format("woff2"), url("Lato.svg") format("svg"), url("Lato.ttf") format("truetype"); }
+
+/*# sourceMappingURL=main7.scss.css.map */
